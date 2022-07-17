@@ -1,11 +1,12 @@
 import React from "react";
 import CardHero from "../CarHeroCard/CardHero";
-
+import models from "../../Assets/images/model-s.jpg";
+ 
 const ModelS = () => {
   return (
     <div>
       <CardHero
-        images="https://tesla-cdn.thron.com/delivery/public/image/tesla/8a74d206-66dc-4386-8c7a-88ff32174e7d/bvlatuR/std/4096x2560/Model-S-Main-Hero-Desktop-LHD"
+        images={models}
         title="Model S"
         des="Plaid"
         range="396mi"

@@ -1,11 +1,12 @@
 import React from "react";
 import CardHero from "../CarHeroCard/CardHero";
+import solarroof from "../../Assets/images/solar-roof.jpg";
 
 const SolarRoof = () => {
   return (
     <div>
       <CardHero
-        images="https://tesla-cdn.thron.com/delivery/public/image/tesla/4aedd73e-cd73-4051-9cc7-68955ad4646d/bvlatuR/std/2880x1800/SR-Value-D"
+        images={solarroof}
         title="Solar Roof"
         des="Transform your roof and produce clean energy"
         range="Solar"
