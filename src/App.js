@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import Home from "./Component/HomePage/Home";
 import Footer from "./Component/Footer";
 import Navbar from "./Component/Navbar";
@@ -16,6 +16,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
+    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/model3" element={<Model3 />} />

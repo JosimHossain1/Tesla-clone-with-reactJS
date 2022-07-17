@@ -14,8 +14,8 @@ const Account = () => {
             <input type="button" value="Next"  className="block my-4 w-[300px] p-2  rounded-full bg-blue-600 text-white cursor-pointer uppercase"  />
           </div>
           <div className="forgot flex justify-around items-center underline opacity-70 text-[14px] ">
-            <a href="#">Forgot email?</a>
-            <a href="#">Forgot your password?</a>
+            <a href="/">Forgot email?</a>
+            <a href="/">Forgot your password?</a>
           </div>
           <div className="or flex justify-center items-center space-x-3 my-5">
             <div className="w-[100px] h-[2px] bg-gray-200"></div>

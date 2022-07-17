@@ -18,18 +18,17 @@ const Navbar = () => {
 
   return (
     <>
-    
       <Navigation>
         <Logo>
           <a href="/">
             <img src={logo} alt="" />
           </a>
         </Logo>
-
         <NavList>
           <ul>
             {NavItems.map((item, index) => (
               <NavLink
+                key={index}
                 to={item.path}
                 className="px-3 py-1 rounded duration-600 font-[600] opacity-60 hover:bg-[#ffffff57] cursor-pointer ">
                 {item.name}
