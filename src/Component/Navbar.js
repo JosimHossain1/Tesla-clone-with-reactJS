@@ -2,8 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../Assets/images/logo.svg";
+import {AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
+
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const CloseHandler = () => {
+    setIsOpen(!isOpen);
+  }
   const NavItems = [
     { name: "Model S", path: "/models" },
     { name: "Model 3", path: "/model3" },
@@ -51,20 +58,23 @@ const Navbar = () => {
             </NavLink>
           </ul>
           <ToogleButton>
-            <span>Menu</span>
+            <span onClick={CloseHandler} >Menu</span>
           </ToogleButton>
         </RightItems>
       </Navigation>
-      
-      {/* <div className="fixed z-20 right-0 bg-white w-[50%] h-screen md:w-[30%] lg:w-[25%] p-4">
+    
+      <div className={`fixed z-20 right-0 bg-white drop-shadow-lg p-4 ${!isOpen? "w-0 opacity-0 " : "w-[50%] h-screen md:w-[30%] lg:w-[25%]"}`}>
         <ul className="">
+          <li className="flex justify-end mb-3">
+            <AiOutlineClose className="block cursor-pointer mr-3 text-2xl" onClick={CloseHandler} />
+          </li>
           {NavItems.map((item, index) => (
             <NavLink to={item.path} className="block py-2 border-b" key={index}>
               {item.name}
             </NavLink>
           ))}
         </ul>
-      </div> */}
+      </div>
     </>
   );
 };

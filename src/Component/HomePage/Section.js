@@ -17,14 +17,11 @@ const Section = ({ image, title, description, anchore, button, button2 }) => {
       <BottomBox>
         <ButtonGroup>
           <LeftButton>{button}</LeftButton>
-
           {
             button2 && 
               <RightButton>{button2}</RightButton>
-            
           }
         </ButtonGroup>
-        
       </BottomBox>
      </Fade>
     </Wrap>
