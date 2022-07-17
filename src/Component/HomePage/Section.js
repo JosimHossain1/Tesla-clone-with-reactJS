@@ -1,12 +1,11 @@
 import React from "react";
-import { Fade } from "react-reveal";
 
 import styled from "styled-components";
 
 const Section = ({ image, title, description, anchore, button, button2 }) => {
   return (
     <Wrap bgImage={image}>
-     <Fade bottom>
+  
      <ModelBox>
         <h1>{title}</h1>
         <p>
@@ -23,7 +22,6 @@ const Section = ({ image, title, description, anchore, button, button2 }) => {
           }
         </ButtonGroup>
       </BottomBox>
-     </Fade>
     </Wrap>
   );
 };
